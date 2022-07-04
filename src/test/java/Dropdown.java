@@ -11,12 +11,7 @@ import java.util.List;
 public class Dropdown extends BaseTest{
     @BeforeMethod
     public void navigate() {
-        super.setUp();
         driver.get("http://the-internet.herokuapp.com/dropdown");
-    }
-    @AfterMethod
-    public void quitDriver () {
-        super.exit();
     }
 
 

@@ -10,12 +10,7 @@ import static org.testng.Assert.assertEquals;
 public class SortableDataTables extends BaseTest {
     @BeforeMethod
     public void navigate() {
-        super.setUp();
         driver.get("http://the-internet.herokuapp.com/tables");
-    }
-    @AfterMethod
-    public void quitDriver () {
-        super.exit();
     }
 
 @Test

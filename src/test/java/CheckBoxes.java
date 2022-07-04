@@ -11,12 +11,7 @@ public class CheckBoxes extends BaseTest {
 
     @BeforeMethod
     public void navigate() {
-        super.setUp();
         driver.get("http://the-internet.herokuapp.com/checkboxes");
-    }
-    @AfterMethod
-    public void quitDriver () {
-        super.exit();
     }
 
     @Test

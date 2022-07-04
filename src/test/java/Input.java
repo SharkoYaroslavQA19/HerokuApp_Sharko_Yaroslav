@@ -8,12 +8,7 @@ import static org.testng.Assert.assertEquals;
 public class Input extends BaseTest {
     @BeforeMethod
     public void navigate() {
-        super.setUp();
         driver.get("http://the-internet.herokuapp.com/inputs");
-    }
-    @AfterMethod
-    public void quitDriver () {
-        super.exit();
     }
 
     @Test

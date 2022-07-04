@@ -9,13 +9,9 @@ public class Hovers extends BaseTest {
 
     @BeforeMethod
     public void navigate() {
-        super.setUp();
         driver.get("http://the-internet.herokuapp.com/hovers");
     }
-    @AfterMethod
-    public void quitDriver () {
-        super.exit();
-    }
+
     @Test
     public void hoversTest() {
         WebElement firstUser = driver.findElement(By.xpath("//div[@id='content']//descendant::div[@class='figure'][1]"));
